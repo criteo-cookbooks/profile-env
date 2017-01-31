@@ -1,0 +1,3 @@
+before_deploy:
+- openssl aes-256-cbc -K $encrypted_96be43d23086_key -iv $encrypted_96be43d23086_iv
+  -in .travis/client.pem.enc -out .travis/client.pem -d
